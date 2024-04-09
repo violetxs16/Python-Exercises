@@ -22,3 +22,5 @@ def max_continous_arr(arr, k):
 
 arr = [2, 3, 4, 1, 5]
 print(max_continous_arr(arr, 2))
+arr = [2, 1, 5, 1, 3, 2]
+print(max_continous_arr(arr, 3))
