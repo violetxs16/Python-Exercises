@@ -29,9 +29,9 @@ def length_continous_subarray(arr, s):
    # print(len_subarr)
     return len_subarr
 
-arr = [2, 3, 4, 1, 5]
-print(length_continous_subarray(arr, 7))
-arr = [2, 1, 5, 1, 3, 2]
-print(length_continous_subarray(arr, 3))
+str1 = "Umbrella"
+print(length_continous_subarray(str1, 2))
+str2 = "hello"
+print(length_continous_subarray(str2, 3))
         
 
