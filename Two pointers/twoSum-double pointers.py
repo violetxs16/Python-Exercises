@@ -16,4 +16,3 @@ def twoSum_pointers(arr, target) -> [int]:
             head_pos += 1
     return [0,0] #No pair found
 
-print(twoSum_pointers([1,2,3,4,5,6],6))
