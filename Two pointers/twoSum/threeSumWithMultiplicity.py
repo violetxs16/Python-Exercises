@@ -3,7 +3,7 @@
 #Two pointer approach
 #
 
-def threeSumMulti(self, arr: List[int], target: int) -> int:
+def threeSumMulti(arr: list[int], target: int) -> int:
         #Two pointer approach
         #We start one pointer at the start
         #One pointer at the end
@@ -20,13 +20,16 @@ def threeSumMulti(self, arr: List[int], target: int) -> int:
                 #Perform summation
                 sum_var = arr[i] + arr[start] + arr[end]
                 if sum_var == target:
+                    print(str(arr[i]) + str(arr[start]) + str(arr[end]))
                     tups.append((arr[i], arr[start], arr[end]))
                     tups_counter += 1
-                    start += 1
-                    end -= 1
+                    #start += 1
+                    #end -= 1
                 elif sum_var > target:#move number
                     end -= 1
                 else:
                     start += 1
         return tups_counter
-        
+
+arr = [1,1,2,2,3,3,4,4,5,5]
+print(threeSumMulti(arr, 8))
